@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+{% load crispy_forms_tags %}
+{% if user.is_authenticated %}
+<div style = "margin-top:80px; width:900px; margin:80px auto">
+    <form method = "POST" >
+        {% csrf_token %}
+        <fieldset>
+            <!--<legend>Enter Facts....</legend> -->
+            {{ form | crispy }}
+        </fieldset>
+        <button class = "primary-btn" type="submit">Check</button>
+    </form>
+</div>
+{% else %}
+<h3 align="center" style="margin: 200px auto; font-size: 50px;font-weight: 900; line-height: 100px;">This website is helpful to detect fake news.<br><a href="{% url 'signup' %}">Signup</a> or <a href="{% url 'login' %}">Login</a> to check news</h3>
+{% endif %}
+{% endblock %}

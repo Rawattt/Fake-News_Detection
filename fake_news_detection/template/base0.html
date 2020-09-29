@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   {% block title %} <title>False Facts Detector</title> {% endblock %}
+    <style>
+        margin : 40 px;
+    </style>
+</head>
+{% load static %}
+<body style="background-image: url({% static 'img/banner.jpg' %}); background-size:cover; background-repeat:no-repeat; ">
+
+
+<div id="home"  >
+<div class="navbar">
+    {% include 'nav.html' %}
+</div>
+    <div class="centered">
+{% block content %}
+
+{% endblock %}
+    </div>
+</div>
+
+</body>
+</html>

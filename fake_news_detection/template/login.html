@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% load static %}
+{% block content %}
+<div style="margin: 120px auto;
+    width: 543px;
+    padding: 6%;
+    background-color: white;">
+    <form method = "POST" style=" background-color:white;" >
+        {% csrf_token %}
+        <fieldset>
+            <legend>Login</legend>
+            {{ form | crispy }}
+        </fieldset>
+        <button class = "btn" type="submit">Log in</button>
+    </form>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div style = "margin:600px auto; width:500px; ">
+    <form method = "POST" style="margin-top:20px; padding:60px; background-color:white;">
+        {% csrf_token %}
+        <fieldset>
+            <legend align="center">Join Now</legend>
+            {{ form | crispy }}
+        </fieldset>
+        <button class = "btn" type="submit">SignUp</button>
+    </form>
+</div>
+
+{% endblock %}

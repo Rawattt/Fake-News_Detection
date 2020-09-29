@@ -1,0 +1,8 @@
+.ipynb_checkpoints/
+news/
+fake_news_detection/db.sqlite3
+Scripts/
+share/
+lib
+classification_model.sav
+fake_news_detection/static/classification_model.sav

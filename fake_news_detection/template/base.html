@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   {% block title %} <title>Fake News Detector</title>
+    {% endblock %}
+    <style>
+        margin : 40 px;
+    </style>
+    {% load static %}
+    <!-- favicons -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/custom-responsive-style.css' %}">
+    <link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script type="text/javascript" src="{% static 'script/jquery-3.2.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'script/all-plugins.js' %}"></script>
+    <script type="text/javascript" src="{% static 'script/plugin-active.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+{% load static %}
+<body data-spy="scroll" data-target=".main-navigation" data-offset="150">
+<section id="HeroBanner">
+    <div class="hero-content">
+<!--<div id="home"  >
+<div class="navbar">-->
+    {% include 'nav.html' %}
+<!--</div>-->
+        <!-- Banner starts here -->
+
+        <!-- Banner ends here -->
+
+   <div class="centered">
+
+{% block content %}
+
+{% endblock %}
+   <!-- </div>-->
+</div>
+</div>
+        </section>
+</body>
+</html>
