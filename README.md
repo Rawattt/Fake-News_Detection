@@ -3,7 +3,7 @@ A web application that can classify whether a piece of news is real or fake usin
 
 ## Technologies Used
 Django was used to create the web application.
-To collect news data, Times Of India websie was scraped. For scraping data python library Beautiful Soup was used. All the news data was then pushed in allNews.csv. For data cleaning, python library NLTK was used. For performing machine learning scikit-learn was used
+To collect news data, Times Of India website was scraped. For scraping data python library Beautiful Soup was used. All the news data was then pushed in allNews.csv. For data cleaning, python library NLTK was used. For performing machine learning scikit-learn was used
 
 ## How to get started
 Install all the packages required.
